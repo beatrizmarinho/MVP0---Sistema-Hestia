@@ -1,2 +1,3 @@
 # MVP0---Sistema-Hestia
-Projeto Final da Trilha Enforce Python
+Projeto final da trilha Enforce Python;
+Hestia: Sistema de Compra e Venda de Imóveis.
