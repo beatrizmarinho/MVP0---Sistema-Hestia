@@ -1,0 +1,30 @@
+<h2>Nova Compra</h2>
+
+
+<div>
+   <br>
+    <label>ID do cliente</label>
+    <input #id_cliente type="text" id="id_cliente" value="" name="id_cliente"/> <br><br>
+    <label>ID do imóvel</label>
+    <input #id_imovel type="text" id="id_imovel" name="id_imovel"/> <br><br>
+    <label>Data da compra</label>
+    <input #data_compra name="data_compra" type="date" id="datacomprac" name="data_compra"/> <br><br>
+    <label>Valor do Imóvel</label>
+    <input #valor_imovel type="text" id="valor_imovel" name="valor_imovel"/> <br><br>
+    <label>Financiamento</label>
+    <input #financiamento type="checkbox" id="financiamento" name="financiamento"/> <br><br>
+    <label>Porcentagem de entrada</label>
+    <input #porcent_entrada type="text" id="porcent_entrada" name="porcent_entrada"/> <br><br>
+    <label>Quantidade de parcelas</label>
+    <input #qtd_parcelas type="text" id="qtd_parcelas" name="qtd_parcelas"/> <br><br>
+    <label>Banco financiador</label>
+    <input #banco_financiador type="text" id="banco_financiador" name="banco_financiador"/> <br><br>
+    
+    
+</div>
+
+<br><br>
+
+  <input type="button" (click)="inputNovaCompra(id_cliente.value, id_imovel.value, data_compra.value, valor_imovel.value, financiamento.checked, porcent_entrada.value, qtd_parcelas.value, banco_financiador.value)" value="Inserir" routerLink="/compra"> &nbsp;|&nbsp; <input type="button" routerLink="/compra" value="Voltar">
+
+<br>

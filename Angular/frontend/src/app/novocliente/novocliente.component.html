@@ -1,0 +1,42 @@
+<h2>Novo Cliente</h2>
+
+
+<div>
+   <br>
+    <label>Nome</label>
+    <input #nome type="text" id="nome" value="" name="nome"/> <br><br>
+    <label>CPF</label>
+    <input #cpf type="text" id="cpf" name="cpf"/> <br><br>
+    <label>RG</label>
+    <input #rg type="text" id="rg" name="rg"/> <br><br>
+    <label>Data de nascimento</label>
+    <input #data_nasc name="data_nasc" type="date" id="data_nasc" name="data_nasc"/> <br><br>
+    <label>Estado civil</label>
+    <input #estado_civil type="text" id="estado_civil" name="estado_civil"/> <br><br>
+    <label>Profissão</label>
+    <input #profissao type="text" id="profissao" name="profissao"/> <br><br>
+    <label>Logradouro</label>
+    <input #logradouro type="text" id="logradouro" name="logradouro"/> <br><br>
+    <label>Número</label>
+    <input #numero type="text" id="numero" name="numero"/> <br><br>
+    <label>Complemento</label>
+    <input #complemento type="text" id="complemento" name="complemento"/> <br><br>
+    <label>CEP</label>
+    <input #cep type="text" id="cep" name="cep"/> <br><br>
+    <label>Bairro</label>
+    <input #bairro type="text" id="bairro" name="bairro"/> <br><br>
+    <label>Cidade</label>
+    <input #cidade type="text" id="cidade" name="cidade"/> <br><br>
+    <label>UF</label>
+    <input #uf type="text" id="uf" name="uf"/> <br><br>
+    
+    
+</div>
+
+<br><br>
+
+
+<input type="button" (click)="inputNovoCliente(nome.value, cpf.value, rg.value, data_nasc.value, estado_civil.value, profissao.value, logradouro.value, numero.value, complemento.value, cep.value, bairro.value, cidade.value, uf.value)" value="Inserir" routerLink="/cliente"> &nbsp;|&nbsp; <input type="button" routerLink="/cliente" value="Voltar">
+
+
+<br>

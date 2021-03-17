@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container" style="overflow-y: auto; width: auto;">
+     <h2>Gastos</h2>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th> ID dos gastos </th>
+                        <th> ID do imóvel </th>
+                        <th> Valor da conta de luz </th>
+                        <th> Valor da conta de água </th>
+                        <th> Valor do condomínio </th>
+                        <th> Valor da propaganda de venda do imóvel </th>
+                    </tr>
+                </thead>
+
+        <tbody *ngFor="let gasto of gastos"> 
+
+            <td>{{ gasto.id_gastos }}</td>
+            <td>{{ gasto.id_imovel }}</td>
+            <td>{{ gasto.conta_luz  | date: 'dd/MM/yyyy'  }}</td>
+            <td>{{ gasto.conta_agua }}</td>
+            <td>{{ gasto.condominio }}</td>
+            <td>{{ gasto.propaganda_venda }}</td>
+        </tbody>
+            </table>
+
+            <br/>
+            <br/>
+
+
+        <button routerLink="/novosgastos">Adicionar Novos Gastos</button> &nbsp;|&nbsp; <input type="button" routerLink="/menu" value="Voltar"/>
+    </div>
+</body>
+
+<br/>
+            <br/>

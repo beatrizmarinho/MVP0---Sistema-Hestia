@@ -1,0 +1,37 @@
+<h2>Novo imóvel</h2>
+
+
+<div>
+   <br>
+    <label>Tipo</label>
+    <input #tipo type="text" id="tipo" value="" name="tipo"/> <br><br>
+    <label>Logradouro</label>
+    <input #logradouro type="text" id="logradouro" name="logradouro"/> <br><br>
+    <label>Número</label>
+    <input #numero type="text" id="numero" name="numero"/> <br><br>
+    <label>Complemento</label>
+    <input #complemento type="text" id="complemento" name="complemento"/> <br><br>
+    <label>CEP</label>
+    <input #cep type="text" id="cep" name="cep"/> <br><br>
+    <label>Bairro</label>
+    <input #bairro type="text" id="bairro" name="bairro"/> <br><br>
+    <label>Cidade</label>
+    <input #cidade type="text" id="cidade" name="cidade"/> <br><br>
+    <label>UF</label>
+    <input #uf type="text" id="uf" name="uf"/> <br><br>
+    <label>ID do proprietário</label>
+    <input #id_proprietario type="text" id="id_proprietario" name="id_proprietario"/> <br><br>
+    <label>Data de posse</label>
+    <input #data_posse name="data_posse" type="date" id="data_posse" name="data_posse"/> <br><br>
+    
+    
+</div>
+
+<br><br>
+
+
+<input type="button" (click)="inputNovoImovel(tipo.value, logradouro.value, numero.value, complemento.value, cep.value, bairro.value, cidade.value, uf.value, id_proprietario.value, data_posse.value)" value="Inserir" routerLink="/imovel"> &nbsp;|&nbsp; <input type="button" routerLink="/imovel" value="Voltar">
+
+
+<br>
+
